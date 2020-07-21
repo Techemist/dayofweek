@@ -25,8 +25,10 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	var str string
 	str, _ = reader.ReadString('\n')
-	// Since the user might enter the day in many ways below three line of code
-	//standardize the input
+	/*
+		Since the user might enter the day in many ways below three line of code
+		standardize the input
+	*/
 	str = strings.ToLower(str)
 	str = strings.TrimSpace(str)
 	str = strings.Title(str)
