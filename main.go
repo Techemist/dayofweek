@@ -27,7 +27,7 @@ func main() {
 	str, _ = reader.ReadString('\n')
 	/*
 		Since the user might enter the day in many ways below three line of code
-		standardize the input
+		standardize the input.
 	*/
 	str = strings.ToLower(str)
 	str = strings.TrimSpace(str)
